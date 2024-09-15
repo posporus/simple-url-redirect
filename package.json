@@ -1,7 +1,6 @@
 {
   "name": "simple-url-redirect",
-  "module": "index.ts",
-  "type": "module",
+  "main": "index.ts",
   "devDependencies": {
     "@types/express": "^4.17.21",
     "bun-types": "latest"
