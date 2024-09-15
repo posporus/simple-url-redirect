@@ -1,4 +1,4 @@
-import express, { Request, Response } from 'express';
+import express from 'express';
 import dotenv from 'dotenv';
 
 dotenv.config();
@@ -7,7 +7,7 @@ const app = express();
 const port = process.env.PORT || 3000;
 const redirectUrl = process.env.REDIRECT_URL;
 
-app.get('*', (req: Request, res: Response) => {
+app.get('*', (_req, res) => {
   if (redirectUrl) {
     res.redirect(redirectUrl);
   } else {
